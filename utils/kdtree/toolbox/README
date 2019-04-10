@@ -1,0 +1,59 @@
+Package: kdtree 2.0
+Author: Andrea Tagliasacchi
+Date: June 5 2012
+
+%------------------  DESCRIPTION -----------------%
+kdtree provides a minimalistic implementation of kd-tree.
+The implementation can be used either inside MATLAB by means
+of MEX calls, or as a standalone tool, directly from a C/C++
+program. 
+
+The image on the website has been creaed with "kdtree_figure_demo.m"
+
+%------------------  FUNCTIONALITIES -----------------%
+This implementation offers the following functionalities:  
+- KDTree (Matlab Class)         wraps all of the following
+- kdtree_build: 		        k-d tree construction O( n log(n) )
+- kdtree_delete:		        frees memory allocated by kdtree
+- kdtree_nearest_neighbor:      nearest neighbor query (for one or more points) 
+- kdtree_k_nearest_neighbors:   kNN for a single query point  
+- kdtree_range_query:           rectangular range query
+- kdtree_ball_query:            queries samples withing distance delta from a point  
+
+%------------------  FILE STRUCTURE -----------------%
+Everyone of the scripts/functions is complete of the following:
+*.cpp:      the mex implementation of the sources
+*.mexmaci:  the compiled version of the mex (intel mac)
+*.m:        the comments that you can browse with the "help" command
+*_demo.m:   demo file to illustrate the behavior
+
+%------------------  HOW COMPILE  -----------------%
+IMPORTANT NOTE: I assume you have a correctly configured MEX environment 
+within matlab using:
+
+>> mex -config
+
+Compiling can be done in two ways. The first is directly inside MATLAB.
+You can compile manually each of the files by calling the command mex 
+within the kdtree folder from the MATLAB command line. For example:
+
+>> mex kdtree_build.cpp
+
+or alternatively one of the two to compile the whole library:
+
+>> KDTree.compile
+>> kdtree_compile
+ 
+Alternatively, if you are in a unix environment, you might also be able 
+to use the provided makefile. In order to do this you need to change some
+of the environment variables in order to make them point to your local 
+MATLAB installation.
+ 
+%-------------- COMPATIBILITY NOTES --------------%
+A wrong compiler might manifest an error like: "fatal error C1001: INTERNAL COMPILER ERROR".
+KDTree compiles correctly with the following compilers:  
+- i686-apple-darwin9-g++-4.0.1 (GCC) 4.0.1 (Apple Inc. build 5484)
+- Visual studio c++ 6.0 with Service pack 6
+
+---
+Feedback is greatly appreciated.

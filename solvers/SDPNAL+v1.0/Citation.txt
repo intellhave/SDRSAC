@@ -1,0 +1,12 @@
+******* Citation Information *****************************
+If you find the software SDPNAL+
+useful, please cite it in you publication as follows:
+
+[1] L.Q. Yang, D.F. Sun, and K.C. Toh, 
+SDPNAL+: a majorized semismooth Newton-CG augmented Lagrangian method for 
+semidefinite programming with nonnegative constraints, 
+Mathemtical Programming Computation, 7 (2015), pp.331--366.
+
+[2] Xinyuan Zhao, Defeng Sun, and Kim-Chuan Toh, A Newton-CG Augmented Lagrangian 
+Method for Semidefinite Programming, 
+SIAM J. Optimization, 20 (2010), pp. 1737--1765. 
