@@ -1,5 +1,4 @@
-
-addpath('./utils');
-addpath('./utils/kdtree/toolbox/');
 addpath(genpath('./solver/SDPNAL+v1.0/'), path);
-addpath('./icp/');
+run('./solvers/SDPNAL+v1.0/startup.m');
+addpath(genpath('./utils'));
+addpath('./utils/kdtree/toolbox/');
