@@ -5,6 +5,8 @@ MATLAB implementation of the following CVPR'19 paper:
 
 Paper can be accessed at: https://arxiv.org/pdf/1904.03483v1.pdf
 
+Before running the demo, please download the latest version of SDPNAL+ (https://drive.google.com/open?id=1wE90nFu95Lq4AOazq_rTaI6D70h4NhK-) and extract the zip file  to /solvers/SDPNAL+v1.0/ (you can overwrite the existing folder)
+
 
 
 Run ``demo_sdrsac.m `` to start the demo.
